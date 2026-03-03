@@ -4,6 +4,6 @@ return {
     priority = 1000,
     lazy = false,
     config = function ()
-        require("catppuccin").setup({})
+        require("plugins.config.ui.cappuccin")
     end
 };

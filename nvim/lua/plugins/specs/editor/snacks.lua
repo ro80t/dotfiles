@@ -15,7 +15,7 @@ return {
                 { section = "startup" },
             }
         },
-        explorer = { enabled = true },
+        explorer = { enabled = false },
         indent = { enabled = true },
         input = { enabled = true },
         picker = { enabled = true },
@@ -27,7 +27,6 @@ return {
         words = { enabled = true },
     },
     keys = {
-        { "<leader>eo", function () Snacks.explorer.open() end, desc = "Explorer open" },
         -- Top Pickers & Explorer
         { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
         { "<leader>,", function() Snacks.picker.buffers() end, desc = "Buffers" },

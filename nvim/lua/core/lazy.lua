@@ -26,7 +26,9 @@ vim.opt.cursorline = true
 
 require("lazy").setup({
     spec = {
-        { import = "plugins.specs" }
+        { import = "plugins.specs.coding" },
+        { import = "plugins.specs.editor" },
+        { import = "plugins.specs.ui" },
     },
     install = { colorscheme = { "habamax" } },
     checker = { enabled = true },
