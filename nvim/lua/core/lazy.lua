@@ -28,6 +28,7 @@ require("lazy").setup({
     spec = {
         { import = "plugins.specs.coding" },
         { import = "plugins.specs.editor" },
+        { import = "plugins.specs.treesitter" },
         { import = "plugins.specs.ui" },
     },
     install = { colorscheme = { "habamax" } },
