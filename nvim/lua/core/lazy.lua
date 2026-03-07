@@ -21,11 +21,9 @@ vim.g.maplocalleader = "\\"
 vim.o.encoding = "utf-8"
 vim.scriptencoding = "utf-8"
 
-vim.opt.number = true
-vim.opt.cursorline = true
-
 require("lazy").setup({
     spec = {
+        { import = "plugins.specs.cmp" },
         { import = "plugins.specs.coding" },
         { import = "plugins.specs.editor" },
         { import = "plugins.specs.lsp" },
