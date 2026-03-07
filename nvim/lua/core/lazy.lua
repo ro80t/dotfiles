@@ -26,6 +26,7 @@ require("lazy").setup({
         { import = "plugins.specs.cmp" },
         { import = "plugins.specs.coding" },
         { import = "plugins.specs.editor" },
+        { import = "plugins.specs.language" },
         { import = "plugins.specs.lsp" },
         { import = "plugins.specs.treesitter" },
         { import = "plugins.specs.ui" },
