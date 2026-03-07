@@ -15,6 +15,8 @@ config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
 config.color_scheme = 'Tokyo Night Moon'
 config.window_background_opacity = 0.95
 
+config.use_ime = true
+
 config.window_decorations = 'RESIZE'
 config.window_frame = {
     border_left_width = '1',
