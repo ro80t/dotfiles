@@ -49,6 +49,10 @@ config.window_frame = {
     active_titlebar_bg = "none",
 }
 
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+    config.default_prog = { "pwsh.exe", "-NoLogo" }
+end
+
 wezterm.on('gui-startup', function()
     local _, main_pane, window = wezterm.mux.spawn_window {}
     window:gui_window():maximize()
