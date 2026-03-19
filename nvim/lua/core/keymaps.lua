@@ -32,12 +32,12 @@ keymap.set("n", "g#", [[g#<Cmd>lua require("hlslens").start()<CR>]], kopts)
 keymap.set("n", "<Leader>l", "<Cmd>noh<CR>", kopts)
 
 keymap.set("", "<f1>", function()
-    if package.loaded["profile"] == nil then
+    local prof = package.loaded["profile"]
+    if prof == nil then
         vim.notify("Profile.nvim is not loaded")
         return
     end
 
-    local prof = require("profile")
     local default_export_path = vim.fn.stdpath("data") .. "/profile.json"
 
     if prof.is_recording() then
