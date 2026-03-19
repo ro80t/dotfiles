@@ -1,0 +1,3 @@
+[submodule "nvim/profile.nvim"]
+	path = nvim/profile.nvim
+	url = https://github.com/stevearc/profile.nvim
