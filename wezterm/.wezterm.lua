@@ -7,6 +7,9 @@ local SOLID_RIGHT_ARROW = wezterm.nerdfonts.ple_upper_left_triangle
 
 config.automatically_reload_config = true
 
+config.font = wezterm.font_with_fallback {
+    "RobotoMono Nerd Font",
+}
 config.font_size = 9.5
 config.use_ime = true
 config.macos_window_background_blur = 20
