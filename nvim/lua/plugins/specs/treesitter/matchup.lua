@@ -1,5 +1,6 @@
 return {
     "andymass/vim-matchup",
+    event = { "VeryLazy" },
     init = function()
         vim.g.matchup_treesitter_stopline = 500
 
