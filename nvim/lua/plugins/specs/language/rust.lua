@@ -1,7 +1,5 @@
 return {
-    {
-        "mrcjkb/rustaceanvim",
-        version = "^8",
-        lazy = false,
-    },
+    "mrcjkb/rustaceanvim",
+    version = "^8",
+    event = { "VeryLazy" }
 }
