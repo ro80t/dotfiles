@@ -1,3 +1,17 @@
 require("mason-lspconfig").setup({
-    automatic_enable = true,
+    ensure_installed = {
+        "rust_analyzer", -- Rust
+        "jdtls", -- Java
+        "lua_ls", -- Lua
+        "pyright", -- Python
+        "ts_ls", -- TypeScript/JavaScript
+        "html", -- Html
+        "cssls", -- CSS
+        "sqls", -- SQL
+        "bashls", -- Bash
+        "jsonls", -- JSON
+        "yamlls", -- YAML
+        "taplo" -- TOML
+    },
+    automatic_enable = true
 })
