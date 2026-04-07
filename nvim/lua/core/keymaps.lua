@@ -1,8 +1,10 @@
 local keymap = vim.keymap
 local kopts = { noremap = true, silent = true }
 
+local treesitter_context = require("treesitter-context")
+
 keymap.set("n", "[c", function()
-    require("treesitter-context").go_to_context(vim.v.count1)
+    treesitter_context.go_to_context(vim.v.count1)
 end, { silent = true })
 
 keymap.set("n", "j", "<Plug>(accelerated_jk_gj)", {})
@@ -28,6 +30,8 @@ keymap.set("n", "g*", [[g*<Cmd>lua require("hlslens").start()<CR>]], kopts)
 keymap.set("n", "g#", [[g#<Cmd>lua require("hlslens").start()<CR>]], kopts)
 
 keymap.set("n", "<Leader>l", "<Cmd>noh<CR>", kopts)
+
+-- Profile.nvim
 
 keymap.set("", "<f1>", function()
     local prof = package.loaded["profile"]
