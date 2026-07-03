@@ -33,10 +33,10 @@ keymap.set("n", "<Leader>l", "<Cmd>noh<CR>", kopts)
 
 -- ToggleTerm.nvim
 
-keymap.set("n", "<leader>tf", "<Cmd>ToggleTerm direction=float<CR>");
-keymap.set("n", "<leader>th", "<Cmd>ToggleTerm direction=horizontal<CR>");
-keymap.set("n", "<leader>tv", "<Cmd>ToggleTerm direction=vertical<CR>");
-keymap.set("n", "<leader>tt", "<Cmd>ToggleTerm direction=tab<CR>");
+keymap.set("n", "<leader>tf", "<Cmd>ToggleTerm direction=float<CR>")
+keymap.set("n", "<leader>th", "<Cmd>ToggleTerm direction=horizontal<CR>")
+keymap.set("n", "<leader>tv", "<Cmd>ToggleTerm direction=vertical<CR>")
+keymap.set("n", "<leader>tt", "<Cmd>ToggleTerm direction=tab<CR>")
 
 -- Profile.nvim
 
