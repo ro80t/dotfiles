@@ -8,6 +8,9 @@ local SOLID_RIGHT_ARROW = wezterm.nerdfonts.ple_upper_left_triangle
 
 config.automatically_reload_config = true
 
+--- For remote-nvim.nvim
+config.mux_enable_ssh_agent = false
+
 config.font = wezterm.font_with_fallback({
     "RobotoMono Nerd Font",
 })
