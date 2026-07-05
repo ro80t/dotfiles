@@ -1,3 +1,4 @@
+require("core.preinstall")
 require("core.profile")
 
 vim.loader.enable()
